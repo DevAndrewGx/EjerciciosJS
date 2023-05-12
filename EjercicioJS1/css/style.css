@@ -3,9 +3,12 @@ section {
     height: 100vh;
     text-align: center;
     padding: 100px 0;
-    background: url("../img/neom-bhKqZNZeAR0-unsplash.jpg");
+    background: url("../img/lorenzo-herrera-p0j-mE6mGo4-unsplash.jpg");
     background-size: cover;
+    
 }
+
+
 
 h1, h2{
     color: #fff;
@@ -19,7 +22,9 @@ p {
 
 button {
     padding: 12px 40px;
-    background: #00fff7;
+    background-image: linear-gradient(to bottom right,
+                rgb(247, 0, 177),
+                rgb(153, 27, 192));
     color: #000;
     margin: 20px;
     border: 2px solid #fff;
@@ -27,6 +32,7 @@ button {
     border-radius: 10px;
     cursor: pointer;
     transition: .5s;
+    font-weight: 500;
 }
 
 button:hover {
