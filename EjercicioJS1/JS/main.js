@@ -74,3 +74,76 @@ function capital() {
     alert("El capital que generara la inversion en el banco cuando transcurran "+cantidadAnos+" sera: "+pagoBanco);
 
 }
+
+
+
+function promedioNotas() {
+    let cantidadNotas = 0, nota, promedio = 0, nombre, estado;
+
+
+    // pedidmos que ingrese nombre del estudiante
+    nombre = prompt("Ingrese nombre del estudiante: ");
+    // pedimos la cantidad de notas del usuario.
+    cantidadNotas = parseInt(prompt("Ingrese la cantidad de notas que sacaste: "));
+    
+    
+    for(let i = 0; i<cantidadNotas; i++) {
+        
+        nota = parseInt(prompt("Ingrese la nota "+(i+1)+" del estudiante "+nombre));
+
+        promedio += (nota/cantidadNotas);
+
+        alert(promedio);
+
+        if(promedio<=3) {
+            estado = "REPROBO";
+        }else {
+            estado = "APROBO";
+        }
+    }
+
+    alert("El estudiante "+nombre+" con un promedio "+promedio+" en sus notas "+estado);
+    
+    
+}
+
+// mayor de dos numeros
+function mayor2Numeros() {
+    let numero1, numero2;
+
+    numero1 = parseInt(prompt("Ingrese el numero1 por favor: "));
+    numero2 = parseInt(prompt("Ingrese el numero2 por favor: "));
+
+    if(numero1>numero2) {
+        alert("El numero mayor es el numero1 "+numero1);
+    }else {
+        alert("El numero mayor es el numero2 "+numero2);
+    }
+}
+
+
+function mayor3Numeros() {
+    let numero1, numero2, numero3;
+    
+    //pedimos al usuario los valores por teclado
+    numero1 = parseInt(prompt("Ingrese el numero1 por favor: "));
+    numero2 = parseInt(prompt("Ingrese el numero2 por favor: "));
+    numero3 = parseInt(prompt("Ingrese el numero2 por favor: "));
+
+    // condicionamos cada uno de los casos
+    if(numero1>numero2 && numero2>numero3) {
+        alert("El numero menor es el numero3 ("+numero3+")"+"\nEl orden de los numeros es: "+numero1+" - "+numero2+" - "+numero3);
+    }else if (numero1>numero3 && numero3>numero2){
+        alert("El numero menor es el numero1 (" + numero2 + ")" + "\nEl orden de los numeros es: " + numero1 + " - " + numero3 + " - " + numero2);
+    }else if(numero2>numero1 && numero1>numero3) {
+        alert("El numero menor es el numero1 (" + numero3 + ")" + "\nEl orden de los numeros es: " + numero2 + " - " + numero1 + " - " + numero3);
+    }else if (numero2 > numero3 && numero3 > numero1){
+        alert("El numero menor es el numero1 (" + numero1 + ")" + "\nEl orden de los numeros es: " + numero2 + " - " + numero3 + " - " + numero1);
+    }else if(numero3 > numero1 && numero1 > numero2) {
+        alert("El numero menor es el numero1 (" + numero2 + ")" + "\nEl orden de los numeros es: " + numero3 + " - " + numero1 + " - " + numero2);
+    }else if(numero3>numero2 && numero2>numero1) {
+        alert("El numero menor es el numero1 (" + numero1 + ")" + "\nEl orden de los numeros es: " + numero3 + " - " + numero2 + " - " + numero1);
+    }else {
+        alert("Los numeros son iguales");
+    }
+}
