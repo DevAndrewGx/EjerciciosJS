@@ -23,9 +23,8 @@
                 <button onclick="ocultar()">OCULTAR</button>
                 <button onclick="gif()">GIF</button>
                 <button onclick="degradado()">DEGRADADO</button>
-                <button onclick="panellateral()">PANEL LATERAL</button>
-            
-            
+                <button onclick="panelLateral()">PANEL LATERAL</button>
+                <button onclick="panelSuperior()">PANEL SUPERIOR</button>
             </div>
             <div class="cont-figura">
                 <h2>FIGURA</h2>
@@ -38,6 +37,25 @@
        
     </section>
 
+    <!-- creamos un div para el panel lateral de la pagina -->
+    <div class="panel-izquierdo">
+        <a href="#" class="close" onclick="panelLateral()">X</a>
+        <h3>Menu Principal</h3>
+        <ul>
+            <a href="#">Inicio</a>
+            <a href="#">Nosotros</a>
+            <a href="#">Productos</a>
+            <a href="#">Contacto</a>
+        </ul>
+    </div>
+
+    <!-- creamos un div para el panel superior -->
+    <div class="panel-superior">
+        <a href="#" class="close-superior" onclick="panelSuperior()">X</a>
+        <h2>panel superior</h2>
+    </div>
+
     <script src="js/main.js"></script>
+    
 </body>
 </html>

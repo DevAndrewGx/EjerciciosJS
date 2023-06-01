@@ -135,3 +135,101 @@ section .cont-figura{
     height: 40vh;
 }
 
+
+.panel-izquierdo {
+    width: 350px;
+    height: 100vh;
+    position: absolute;
+    left: -450px;
+    top:0;
+    z-index: 999;
+    background: #fff;
+    padding: 50px 40px;
+    transition: .5s;
+}
+
+.panel-izquierdo h3 {
+    font-size: 30px;
+    color: #012937;
+}
+
+.panel-izquierdo ul a {
+    display: block;
+    padding: 10px 15px;
+    margin: 8px 0;
+    max-width: 250px;
+    background: #012937;
+    color: #fff;
+    text-decoration: none;
+}
+
+.panel-izquierdo ul a:hover {
+    transform: scale(1.1);
+}
+
+
+.panel-izquierdo.activo {
+    left: 0;
+
+}
+
+.close {
+    position: absolute;
+    right: 30px;
+    top: 25px;
+    color: #999;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.panel-superior {
+    width: 100%;
+    height: 70%;
+    background: url("../img/pexels-rustu-erata-10406113.jpg")no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 0px;
+    top: -100%;
+    z-index: 999;
+    padding: 40px 40px;
+    transition: .5s;
+}
+
+.panel-superior h2{
+    color: #fff;
+    margin-top: 200px;
+    font-size: 100px;
+    text-align: center;
+}
+
+/* .close-superior {
+    position: absolute;
+    right: 30px;
+    top: 25px;
+    color: #999;
+    font-size: 25px;
+    text-decoration: none;
+} */
+
+.close-superior {
+    position: absolute;
+    right: 30px;
+    top: 25px;
+    color: #f3f3f3;
+    font-size: 25px;
+    text-decoration: none;
+    width: 100px;
+}
+
+
+.panel-superior.activo {
+    top: 0;
+}
+
+
+
+
+
+
+
+

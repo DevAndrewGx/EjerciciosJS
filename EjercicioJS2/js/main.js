@@ -49,6 +49,13 @@ function degradado(){
     figura.classList.toggle("degradado");
 }
 
+function panelLateral() {
+    const panel = document.querySelector(".panel-izquierdo");
+    panel.classList.toggle("activo");
+}
 
 
-
+function panelSuperior() {
+    const panel = document.querySelector(".panel-superior");
+    panel.classList.toggle("activo")
+}
